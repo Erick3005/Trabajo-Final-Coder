@@ -1,5 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* tablet grande */
+@media (max-width: 1024px) {
+  .item {
+    padding: 0 48px; 
+  }
+
+  .navbar {
+    padding: 0 48px;
+  }
+
+  .quines-somos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quines-somos__text {
+    max-width: 100%;
+  }
+
+  .quines-somos__img {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+  }
+
+  .nuestros-clientes__caja {
+    max-width: 30vw;
+  }
+
+  .productos-tendencia__cards,
+  .recomendaciones__cards {
+    flex-wrap: wrap; 
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .item {
+    padding: 0 24px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+
+  .quines-somos {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .quines-somos__img {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .quines-somos__img1,
+  .quines-somos__img2,
+  .quines-somos__img3 {
+    height: auto;
+  }
+
+  .nuestros-clientes {
+    grid-template-columns: 1fr;
+  }
+
+  .nuestros-clientes__text {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .nuestros-clientes__marcas {
+    justify-content: center;
+  }
+
+  .productos-tendencia__cards,
+  .recomendaciones__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .card2 {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contactanos {
+    grid-template-columns: 1fr;
+  }
+
+  .contactanos-text {
+    border-radius: 24px 24px 0 0;
+    text-align: center;
+    height: auto;
+  }
+
+  .map {
+    border-radius: 0 0 24px 24px;
+    height: 200px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 32px;
+    gap: 32px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/* Celulares muy pequeños */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .navbar li {
+    margin: 0 16px;
+  }
+
+  .footer-container {
+    padding: 24px;
+  }
+}
+
+
 /* clases tipografia */
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -585,7 +724,8 @@ main {
 
 .footer-container {
   max-width: 1440px;
-  height: 300px;
+  min-height: 300px;
+  max-height: auto;
   margin: 0 auto;
   padding: 48px 112px;
   display: flex;
