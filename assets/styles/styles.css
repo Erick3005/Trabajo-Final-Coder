@@ -144,11 +144,6 @@ header {
     align-items: center;
 }
 
-.navbar img {
-    max-height: 48px;
-    width: auto;
-}
-
 .navbar ul {
     display: flex;
     list-style: none;
@@ -167,6 +162,10 @@ header {
     font-family: "Poppins";
 }
 
+.navbar a:hover {
+  color:#FDC514;
+}
+
 h1{
     color: rgb(205, 205, 220);
     font-family: "Poppins";
@@ -174,7 +173,7 @@ h1{
 }
 
 h2 {
-    color: brown;
+    color:#FDC514;
     font-family: "Poppins";
 }
 
