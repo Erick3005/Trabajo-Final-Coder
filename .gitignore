@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# Archivos de log
+*.log
+
+# Archivos del sistema
+.DS_Store
+
+# Archivos map
+*.map
