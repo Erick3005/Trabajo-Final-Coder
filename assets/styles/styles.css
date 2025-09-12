@@ -1,367 +1,265 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* tablet grande */
 @media (max-width: 1024px) {
   .item {
-    padding: 0 48px; 
+    padding: 0 48px;
   }
-
   .navbar {
     padding: 0 48px;
   }
-
   .quines-somos {
     flex-direction: column;
     text-align: center;
   }
-
   .quines-somos__text {
     max-width: 100%;
   }
-
   .quines-somos__img {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
   }
-
   .nuestros-clientes__caja {
     max-width: 30vw;
   }
-
   .productos-tendencia__cards,
   .recomendaciones__cards {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
 }
-
 /* Celulares */
 @media (max-width: 768px) {
   .item {
     padding: 0 24px;
   }
-
   .navbar {
     flex-direction: column;
     height: auto;
     gap: 16px;
   }
-
   .quines-somos {
     flex-direction: column;
     gap: 32px;
     text-align: center;
   }
-
   .quines-somos__img {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
-
   .quines-somos__img1,
   .quines-somos__img2,
   .quines-somos__img3 {
     height: auto;
   }
-
   .nuestros-clientes {
     grid-template-columns: 1fr;
   }
-
   .nuestros-clientes__text {
-    grid-column: 1 / -1;
+    grid-column: 1/-1;
     text-align: center;
   }
-
   .nuestros-clientes__marcas {
     justify-content: center;
   }
-
   .productos-tendencia__cards,
   .recomendaciones__cards {
     flex-direction: column;
     align-items: center;
   }
-
   .card,
   .card2 {
     width: 100%;
     max-width: 320px;
   }
-
   .contactanos {
     grid-template-columns: 1fr;
   }
-
   .contactanos-text {
     border-radius: 24px 24px 0 0;
     text-align: center;
     height: auto;
   }
-
   .map {
     border-radius: 0 0 24px 24px;
     height: 200px;
   }
-
   .footer-container {
     flex-direction: column;
     padding: 32px;
     gap: 32px;
   }
-
   .footer-links {
     flex-direction: column;
     gap: 24px;
   }
 }
-
 /* Celulares muy pequeños */
 @media (max-width: 480px) {
   h1 {
     font-size: 4rem;
   }
-
   h2 {
     font-size: 1.5rem;
   }
-
   p {
     font-size: 14px;
   }
-
   .navbar li {
     margin: 0 16px;
   }
-
   .footer-container {
     padding: 24px;
   }
 }
 
-
-/* clases tipografia */
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif; 
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light { /* parrafos */
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 18px;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-/* clases tipografia */
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
 }
 
+
 header {
-    background-color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center; 
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar {
-    max-width: 1440px;
-    width: 100%;
-    height: 82px;
-    padding: 0px 112px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  height: 82px;
+  padding: 0px 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar li {
-    text-decoration: none;
-    margin: 0 32px;
+  text-decoration: none;
+  margin: 0 32px;
 }
 
 .navbar a {
-    color: #15253F;
-    text-decoration: none;
-    font-family: "Poppins";
+  color: #15253F;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .navbar a:hover {
-  color:#FDC514;
+  color: #FDC514;
 }
 
-h1{
-    color: rgb(205, 205, 220);
-    font-family: "Poppins";
-    font-size: 10rem;
+/* ================================
+   Jerarquía tipográfica global
+   ================================ */
+
+/* Títulos principales */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;   /* ~40px */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: white; /* heredado */
 }
 
+/* Subtítulos importantes */
 h2 {
-    color:#FDC514;
-    font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;  
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+  color: #FDC514;
 }
 
+/* Subtítulos secundarios */
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;   /* ~24px */
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+/* Textos destacados (ej: cards, reseñas) */
 h5 {
-    color: rgb(255, 255, 255);
-    font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;   /* ~18px */
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  color: white; /* heredado */
 }
 
-p{
-font-family: "Poppins";
+/* Párrafos */
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px; 
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
+/* Links generales */
 a {
-    text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 img {
-    height: 5vh;
-    width: auto;
+  height: 5vh;
+  width: auto;
 }
 
 main {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
 }
 
 .item {
-    padding: 0 112px;
+  padding: 0 112px;
 }
 
 .banner {
-    background-color: #15253F;
-    width: 100%;
-    justify-items: center;
+  background-color: #15253F;
+  width: 100%;
+  justify-items: center;
 }
 
 .banner__content {
-    max-width: 1440;
-    height: 661px;
-    grid-column: 1 / 2 ;
-    grid-row: 1 / 2;
-    background-color: #15253F;
+  max-width: 1440;
+  height: 661px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #15253F;
 }
 
 /* inicio seccion 1 */
-
 .section1 {
   max-width: 1440px;
   margin: 0 auto;
@@ -396,8 +294,8 @@ main {
 }
 
 .quines-somos__img1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  grid-column: 1/2;
+  grid-row: 1/2;
   width: 100%;
   height: 300px;
   border-radius: 12px;
@@ -405,8 +303,8 @@ main {
 }
 
 .quines-somos__img2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-column: 1/2;
+  grid-row: 2/3;
   width: 100%;
   height: 250px;
   border-radius: 12px;
@@ -414,96 +312,92 @@ main {
 }
 
 .quines-somos__img3 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
+  grid-column: 2/3;
+  grid-row: 1/3;
   width: 100%;
   height: 100%;
   border-radius: 12px;
   object-fit: cover;
 }
 
-
 /* fin seccion 1 */
-
 /* inicio seccion 2 */
-
 .section2 {
-   background-color: #15253F;
-   width: 100%;
-   padding: 72px 0;
+  background-color: #15253F;
+  width: 100%;
+  padding: 72px 0;
 }
 
 .section2 p {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .nuestros-clientes {
-    max-width: 1440px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 24px;
 }
 
 .nuestros-clientes__text {
-    grid-column: 1 / 9;
-    display: flex;
-    flex-direction: column;
+  grid-column: 1/9;
+  display: flex;
+  flex-direction: column;
 }
 
 .nuestros-clientes__titulo {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .nuestros-clientes__marcas {
-    grid-column: 1 / 13;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+  grid-column: 1/13;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .nuestros-clientes__caja {
-    flex: 1 1 200px;
-    max-width:  18vw;
-    aspect-ratio: 3 / 2;
-    border-radius: 16px;
-    border: 15px;
-    border-color: #ffffff;
-    background-color: #FDC514;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  flex: 1 1 200px;
+  max-width: 18vw;
+  aspect-ratio: 3/2;
+  border-radius: 16px;
+  border: 15px;
+  border-color: #ffffff;
+  background-color: #FDC514;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .logo-clientes {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* inicio seccion 3 */
-
 .section3 {
-   width: 100%;
-   padding: 72px 0;
+  width: 100%;
+  padding: 72px 0;
 }
 
 .section3 p {
-    color: #15253F;
+  color: #15253F;
 }
 
 .productos-tendencia {
-    max-width: 1440px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: 2fr;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 2fr;
 }
 
-.productos-tendencia__text{
+.productos-tendencia__text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -513,16 +407,16 @@ main {
 }
 
 .productos-tendencia__cards {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 48px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
 }
 
 .card {
-  width: 389px;
+  width: 380px;
   border: none;
   border-radius: 12px;
   text-align: center;
@@ -539,15 +433,14 @@ main {
 
 .card-title {
   position: absolute;
+  width: 300px;
   top: 230px;
   left: 50%;
   transform: translateX(-50%);
   background: #15253F;
   color: white;
   padding: 6px 20px;
-  border-radius: 40px;
-  font-size: 20px;
-  font-weight: 600;
+  border-radius: 1000px;
   margin: 0;
 }
 
@@ -555,8 +448,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px; 
-  gap: 24px; 
+  padding: 32px;
+  gap: 24px;
 }
 
 .card-text {
@@ -566,7 +459,7 @@ main {
 
 .card .btn {
   background: #FDC514;
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   border: none;
   padding: 10px 24px;
@@ -580,14 +473,14 @@ main {
 }
 
 /* inicio seccion 4 */
-
 .section4 {
-   width: 100%;
-   padding: 72px 0;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 72px;
 }
 
 .section4 p {
-    color: #15253F;
+  color: #15253F;
 }
 
 .recomendaciones {
@@ -597,7 +490,7 @@ main {
   grid-template-rows: 2fr;
 }
 
-.recomendaciones__text{
+.recomendaciones__text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -607,14 +500,13 @@ main {
 }
 
 .recomendaciones__cards {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 48px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
 }
-
 
 .card2 {
   width: 389px;
@@ -643,7 +535,7 @@ main {
   text-align: center;
 }
 
-.text-card h5 {
+.text-card h3 {
   color: white;
   margin-bottom: 20px;
 }
@@ -654,10 +546,10 @@ main {
 }
 
 .star_conteiner {
-  background: #FDC514;       
+  background: #FDC514;
   padding: 10px 24px;
   border-radius: 30px;
-  margin: -20px auto 20px auto; 
+  margin: -20px auto 20px auto;
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -669,7 +561,6 @@ main {
 }
 
 /* inicio seccion 5 */
-
 .section5 {
   width: 100%;
   padding: 48px 0;
@@ -677,8 +568,8 @@ main {
 
 .contactanos {
   max-width: 1440px;
-  margin: 0 auto;      
-  padding: 0 112px;     
+  margin: 0 auto;
+  padding: 0 112px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: stretch;
@@ -693,7 +584,7 @@ main {
   text-align: left;
   border-radius: 24px 0 0 24px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -709,12 +600,159 @@ main {
   overflow: hidden;
 }
 
-
 .contactanos-text p {
   color: white;
 }
 
 /* fin seccion 5 */
+
+/* Inicio pag Nosotros */
+
+.section6 {
+  width: 100%;
+  padding: 64px 0;
+  background-color: #15253F;
+}
+
+.titulo-principal {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.titulo-principal h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.section7-info_text {
+  max-width: 80vw;
+}
+.svg {
+  background-color: #FDC514;
+  padding: 20px;
+  border-radius: 1000px;
+}
+
+.fotos-nosotros {
+  width: 100%;
+  padding: 84px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.fotos-nosotros--img {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.fotos-nosotros::before {
+  content: '';
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  width: 100%;
+  height: 350px;
+  background-color:#FDC514; 
+  transform: translateY(-50%); 
+  z-index: 0; 
+}
+
+.fotos-nosotros--img img {
+  height: 500px;
+  width: 400px;
+  border-radius: 12px;
+  background-color:#15253F;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section7 {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 84px;
+}
+
+.section7-info {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 64px; 
+}
+
+.section7 article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card-contactanos {
+  width: 800px;
+  padding: 30px;
+  background-color:#15253F; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px; 
+}
+
+.card-contactanos p {
+  color: white;
+}
+
+.card-contactanos a {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 24px;
+  background-color :#FDC514;
+  color: white;
+  border-radius: 1000px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.card-contactanos a:hover {
+  background-color:#e0a800;
+}
+
+/* Fin pag Nosotros */
+
+.section_cards_catalogo {
+  width: 100%;
+  padding: 84px 0;
+}
+
+.row {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.description p {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  text-align: center;
+}
 
 .footer {
   background-color: #15253F;
@@ -744,6 +782,8 @@ main {
 
 .footer-left p {
   color: white;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .footer-right {
@@ -771,7 +811,8 @@ main {
 .footer-links a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
@@ -795,23 +836,20 @@ main {
 }
 
 .footer-bottom {
-  background-color:#FDC514;
+  background-color: #FDC514;
   text-align: center;
   padding: 12px;
 }
 
 .footer-bottom p {
   margin: 0;
-  font-size: 12px;
-  color:#15253F;
+  font-size: 0.8rem;
+  color: #15253F;
   font-weight: 500;
 }
 
 
-
-
 /* id es mas especifico = #id (dejarlo para navegacio) clase es mejor para estilos .clase */
-
 /* REM toma el valor predefinido del navegador 16pm */
 /* EM toma el valor el valor de su padre */
 /* @font face */
@@ -819,3 +857,6 @@ main {
 /* git add .
 git commit -m "mis cambios"
 git push origin main */
+
+
+/*# sourceMappingURL=styles.css.map */
