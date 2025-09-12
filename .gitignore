@@ -11,10 +11,6 @@ package-lock.json
 .vscode/
 .history/
 
-# Archivos compilados de CSS
-assets/styles/*.css
-assets/styles/*.css.map
-
 # Archivos temporales / logs
 *.log
 *.tmp
