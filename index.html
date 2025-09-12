@@ -29,13 +29,35 @@
     </header>
 
     <main>
-        <section class="banner item">
-            <div class="banner__content">
-                <h1>Bienvenido a Empaques Gani</h1>
-                <h2>Soluciones en empaques para tu negocio</h2>
-                <a href="./assets/pages/catalogo.html" class="btn">Ver catálogo</a>
-                <a href="./assets/pages/contactanos.html" class="btn">Contáctanos</a>
+        <section class="banner">
+          <div class="banner-wrapper">
+            <!-- Vectores decorativos -->
+            <img src="./assets/img/svg1.svg" alt="" class="decor decor-top-left">
+            <img src="./assets/img/svg2.svg" alt="" class="decor decor-left">
+            <img src="./assets/img/svg3.svg" alt="" class="decor decor-right">
+        
+            <!-- Contenido principal -->
+            <div class="banner-content item">
+              <div class="text-side">
+                <p class="subtitle">Empaques Gani</p>
+                <h2 class="title">Donde la creatividad</h2>
+                <h2 class="title">Se imprime</h2>
+                <div class="underline"></div>
+                <div class="buttons">
+                  <a href="./assets/pages/catalogo.html" class="btn btn-white">Catálogo</a>
+                  <a href="./assets/pages/contactanos.html" class="btn btn-yellow">Contáctanos</a>
+                </div>
+              </div>
+        
+              <div class="image-side">
+                <div class="slider">
+                  <img src="./assets/img/foto_local.png" alt="Foto 1" class="active">
+                  <img src="./assets/img/caja.jpg" alt="Foto 2">
+                  <img src="./assets/img/bolsa.jpg" alt="Foto 3">
+                </div>
+              </div>
             </div>
+          </div>
         </section>
 
         <section class="section1">
@@ -83,42 +105,50 @@
         </section>
 
         <section class="section3">
-            <div class="productos-tendencia item">
-                <div class="productos-tendencia__text">
+            <div class="productos-tendencia">
+                <div class="productos-tendencia__text item">
                     <h2>Productos en tendencia</h2>
                     <p class="poppins-light">Descubre los empaques más solicitados y con mayor demanda en el mercado actual. Diseñados para destacar tus productos y ofrecer una mejor experiencia a tus clientes.</p>
                 </div>
             
                 <div class="productos-tendencia__cards">
-                    <div class="card">
-                     <img src="./assets/img/porducto foto.png" class="card-img-top" alt="Producto en tendencia">
-                     <div class="card-body">
-                         <h3 class="card-title">Bolsa ecológica</h3>
-                         <p class="card-text">
-                            Bolsa reutilizable, resistente y amigable con el medio ambiente. Ideal para negocios sostenibles.
-                         </p>
-                         <a href="#" class="btn btn-primary">Ver más</a>
-                     </div>
-                    </div>
 
-                    <div class="card">
-                     <img src="./assets/img/porducto foto.png" class="card-img-top" alt="Producto en tendencia">
-                     <div class="card-body">
-                         <h3 class="card-title">Caja premium</h3>
-                         <p class="card-text">Empaque elegante y resistente, perfecto para productos de alta gama. Perfecto para hacer envios y cuidar tus... </p>
-                         <a href="#" class="btn btn-primary">Ver más</a>
-                     </div>
-                    </div>
-
-                    <div class="card">
-                     <img src="./assets/img/porducto foto.png" class="card-img-top" alt="Producto en tendencia">
-                     <div class="card-body">
-                         <h3 class="card-title">Sobres</h3>
-                         <p class="card-text">Diseñado a la medida para destacar tu marca en cada entrega. Perfecto para hacer envios y cuidar tus productos.</p>
-                         <a href="#" class="btn btn-primary">Ver más</a>
-                     </div>
-                    </div>
-                </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4 item">
+                      <div class="col">
+                        <div class="card">
+                          <img src="./assets/img/porducto foto.png" class="card-img-top" alt="Bolsa ecológica de papel kraft">
+                          <div class="card-body">
+                            <h3 class="card-title">Bolsa de papel kraft</h3>
+                            <p class="card-text">Ideal para negocios que buscan un empaque ecológico y resistente. Perfecta para tiendas de
+                              ropa, regalos o alimentos.</p>
+                            <a href="#" class="btn btn-primary"> Ver más</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <div class="card">
+                          <img src="./assets/img/porducto foto.png" class="card-img-top" alt="Caja de cartón reforzada">
+                          <div class="card-body">
+                            <h3 class="card-title">Caja de cartón</h3>
+                            <p class="card-text">Diseñada para brindar máxima protección en el traslado de productos. Disponible en diferentes
+                              tamaños.</p>
+                            <a href="#" class="btn btn-primary"> Ver más</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <div class="card">
+                          <img src="./assets/img/porducto foto.png" class="card-img-top" alt="Bolsas biodegradables">
+                          <div class="card-body">
+                            <h3 class="card-title">Bolsas E-Comerce</h3>
+                            <p class="card-text">Fabricadas con materiales amigables con el medio ambiente, son una alternativa sostenible
+                              para tu negocio.</p>
+                            <a href="#" class="btn btn-primary"> Ver más</a>
+                          </div>
+                        </div>
+                      </div>  
             </div>
         </section>
 
