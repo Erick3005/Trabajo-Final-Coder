@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://erick3005.github.io/Trabajo-Final-Coder/sitemap.xml
